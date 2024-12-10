@@ -1,0 +1,45 @@
+
+# 2024-12-09 21:49:43.098093
++/help hi
+
+# 2024-12-09 22:07:39.665647
++n
+
+# 2024-12-09 22:09:04.791623
++/help how u work
+
+# 2024-12-09 22:22:18.752357
++I wanat you to be my buddy that does all the programing for me as we build something i want. ill tell you and you are a 10000x coder in all things and is just doing the coding as i give oyu the general idea and stuff so. lets start. we are making 2 differnt agents one at a time using this library i like called phidata https://docs.phidata.com/examples/agents/reasoning-agent . Specifically here with the reasoning agent, i already have thevirtual env going and it installed. no code files yet on my end. i want to make agent 1 first. these agents relate to meeting prep and continuity of meeting info. this is my openaiapi key use it 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. you might have to look on the phidata website to see how to explicitly feed the api key in. agent 1 is called Meeting Analyzer. It at a high level takes in infoo aboout a project in a company and stakholders for it and a transcript from a specific meeting and uses all the context and meeting info to output concise notes decisions made, etc about the transcription and summarization. I have done a lot of work on this already but by hand/ feeding strings to ai at different parts and files. i want to put it all together. ill give you all that source materical but first, the idea of the solution is that the agent using phidata's ability as documented somewhere in their docs to access pdf's NOT BY RAG so if need be to load them more traditionalyl for it go for it. it will take these "inputs" and output soomething that is also fairly well documented and templated. I also have some examples of me feeding it through for a few shot prompt. Given all of this. I do not want a huge repo or anythiing but know i do need a folder to put the meeting files i want it to run on at a given run, and some dir structure/naming principles. you can propose that to me but dont code yet and then ill tell you next steps
+
+# 2024-12-09 22:23:30.878439
++/model o1-preview
+
+# 2024-12-09 22:23:43.943198
++/undo
+
+# 2024-12-09 22:23:53.077323
++/model anthropic.claude-3-5-sonnet-20241022-v2:0
+
+# 2024-12-09 22:24:07.536309
++/model claude-3-5-sonnet-20241022
+
+# 2024-12-09 22:24:29.233786
++thats too complicated. no more than a single layer of nesting tyoo, make another proposal. 
+
+# 2024-12-09 22:24:40.470669
++n
+
+# 2024-12-09 22:24:43.724927
++here is a shit name
+
+# 2024-12-09 22:24:49.890325
++n
+
+# 2024-12-09 22:25:00.217953
++ill be nice, come up with names that are descriptive but natural
+
+# 2024-12-09 22:25:38.213827
++remember no writting files yet, just make that dir structure cause oyu killed it bae
+
+# 2024-12-09 22:26:18.890236
++run those commands
