@@ -16,7 +16,7 @@ class MeetingAnalyzer(Agent):
         super().__init__(
             name="Meeting Analyzer",
             description="A specialized tool designed to process meeting transcripts and produce actionable outputs",
-            model=Ollama(model="llama3.2:latest"),  # Using llama2 model from ollama
+            model=Ollama(model="llama3.1"),  # Using llama3.2 model from ollama
             system_prompt=system_prompt
         )
 

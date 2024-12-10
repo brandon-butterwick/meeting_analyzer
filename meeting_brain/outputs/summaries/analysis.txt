@@ -1,30 +1,38 @@
-# Analysis of the Nick & Brandon Meeting
+Here is the analysis of the meeting:
 
-### 1. Notes
+**Meeting Details**
 
-- Brandon highlighted ongoing issues with the onboarding process, emphasizing the need for clarity on IT's responsibilities.
-- Nick clarified that 90% of new hires are assumed to onboard remotely unless specified otherwise.
-- Current communication about new hires and their preferences (remote or in-person, Mac or PC) is facilitated by a questionnaire historically managed by Olivia.
-- Computer allocation is largely determined by role or department, rather than specific job titles, with a predefined list for hardware specifications.
-- Peripheral requests are typically made post-onboarding but can be anticipated by team leads if known in advance.
-- IT aims to deliver computers one or two days before the start date, with shipments usually made on Tuesdays.
-- Remote users have an option for IT assistance upon receipt of their equipment, but it is primarily self-service.
+* **Date:** Not specified
+* **Time:** Not specified
+* **Duration:** Approximately 12 minutes (based on the transcript)
+* **Attendees:** Brandon Butterwick and Nick Kerr
+* **Topic:** Onboarding process for new employees, specifically focusing on the first day experience
 
-### 2. Decisions Made
+**Key Discussion Points**
 
-- **Peripheral Requests:** They remain optional post-onboarding but can be facilitated by lead initiative.
-- **Onsite Computer Provisioning:** Computers can be ready at the office if pre-requested, allowing for self-setup with IT support as needed.
-  
-### 3. Outstanding Questions
+1. **Onboarding Process**: Brandon asked Nick about the current onboarding process, including the logistics of shipping laptops to new employees and the setup process.
+2. **Computer Setup**: Nick explained that new employees are usually set up with a laptop at their desk, but they have an optional help feature for remote users who can contact Livia for assistance.
+3. **First Day Experience**: Brandon mentioned that he will be working with Opal to improve the first day experience for new employees and will likely communicate with her about his side of the process.
+4. **Job Responsibilities**: Brandon shared that he has recently taken on a new role but still doesn't have clear job responsibilities, so he's trying to figure things out as he goes.
 
-- Why aren't peripheral requests included in the initial onboarding questionnaire?
-- How can IT improve timeliness of shipments to ensure arrival before the start date for all hires, especially those overseas?
+**Action Items**
 
-### 4. Action Items
+* None explicitly mentioned in the transcript
 
-- **Evaluate Questionnaire:** Review why peripherals are not part of the initial questionnaire and if they should be added.
-- **Coordination with Opal:** Brandon to work with Opal on streamlining the first-day experience.
+**Decisions Made**
 
-### 5. Meeting Summary
+* None explicitly mentioned in the transcript
 
-The meeting focused on clarifying the Internal IT department's role in the onboarding process to address ongoing procedural issues and enhance new hire experiences. Nick provided insights into current processes, including the assumption that most hires are remote, computer allocation based on role spectrum, and peripheral requests post-arrival. Decisions were made to possibly integrate peripheral requests into the onboarding questionnaire and allow for onsite computer setups when requested for in-person onboarding. Outstanding questions about peripheral request inclusion and shipment timelines remain. Actionable steps include reviewing the onboarding questionnaire’s comprehensiveness and coordinating with Opal to improve first-day experiences for new hires.
+**Next Steps**
+
+* Brandon will work with Opal to improve the first day experience for new employees.
+* Nick may communicate with Opal about his side of the process.
+
+**Questions and Clarifications**
+
+* Brandon asked several questions about the onboarding process, including how laptops are shipped and set up, as well as what happens if a remote user needs assistance.
+* Nick provided clarification on these points and offered additional context where needed.
+
+**Overall Impression**
+
+The meeting appears to be an informal discussion between two colleagues who are familiar with each other's roles. The conversation is focused on improving the onboarding process for new employees, particularly around the first day experience. Brandon is seeking guidance and advice from Nick as he takes on a new role with unclear responsibilities.
