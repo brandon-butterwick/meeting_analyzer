@@ -6,7 +6,7 @@ import tkinter as tk
 import threading
 import asyncio
 import os
-import sys
+import time
 from run import analyze_meeting
 
 class AnalyzerGUI:
@@ -52,13 +52,13 @@ class AnalyzerGUI:
         def run():
             try:
                 asyncio.run(analyze_meeting())
-                self.label.config(text="Done!")
-                # Open the analysis file
+                self.label.config(text="Done! Opening analysis...")
+                time.sleep(1)  # Brief pause
                 os.startfile('meeting_brain/outputs/summaries/analysis.txt')
-                # Exit the program after 5 seconds
-                self.root.after(5000, lambda: sys.exit(0))
-            except:
-                self.label.config(text="Error occurred")
+                time.sleep(2)  # Give time for file to open
+                self.root.quit()  # Close cleanly
+            except Exception as e:
+                self.label.config(text=f"Error: {str(e)}")
                 self.button.config(state='normal')
         
         threading.Thread(target=run, daemon=True).start()
