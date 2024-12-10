@@ -24,24 +24,25 @@ class AnalyzerGUI:
         self.root.geometry(f"{window_width}x{window_height}+{x}+{y}")
         
         # Create main frame with padding
-        main_frame = ttk.Frame(self.root, padding="20")
+        main_frame = tk.Frame(self.root, padx=20, pady=20, bg='white')
         main_frame.pack(expand=True, fill="both")
         
-        # Configure style for the big red button
-        style = ttk.Style()
-        style.configure("Red.TButton",
-                       font=("Arial", 16, "bold"),
-                       padding=20,
-                       background="red")
-        
         # Add the big red button
-        self.analyze_button = ttk.Button(
+        self.analyze_button = tk.Button(
             main_frame,
             text="Analyze my Meeting",
-            style="Red.TButton",
+            font=("Arial", 16, "bold"),
+            bg='#ff4444',
+            fg='white',
+            activebackground='#cc3333',
+            activeforeground='white',
+            relief=tk.RAISED,
+            bd=3,
+            padx=20,
+            pady=10,
             command=self.start_analysis
         )
-        self.analyze_button.pack(expand=True)
+        self.analyze_button.pack(expand=True, pady=20)
         
         # Create progress bar (hidden initially)
         self.progress = ttk.Progressbar(
@@ -51,46 +52,48 @@ class AnalyzerGUI:
         )
         
         # Status label (hidden initially)
-        self.status_label = ttk.Label(
+        self.status_label = tk.Label(
             main_frame,
             text="",
-            font=("Arial", 12)
+            font=("Arial", 12),
+            bg='white'
         )
         self.status_label.pack(pady=20)
 
     def start_analysis(self):
         # Disable button and show progress
-        self.analyze_button.state(['disabled'])
+        self.analyze_button.config(state='disabled')
         self.progress.pack(pady=20)
         self.progress.start(10)
         self.status_label.config(text="Analyzing meeting...")
         
         # Run analysis in separate thread
         thread = threading.Thread(target=self.run_analysis)
+        thread.daemon = True
         thread.start()
 
     def run_analysis(self):
         try:
             # Run the analysis
             asyncio.run(analyze_meeting())
-            
-            # Update UI on completion
-            self.root.after(0, self.analysis_complete)
-        except Exception as e:
-            # Handle any errors
-            self.root.after(0, lambda: self.analysis_complete(str(e)))
+            self.root.after(0, self.on_success)
+        except Exception as error:
+            self.root.after(0, lambda: self.on_error(str(error)))
 
-    def analysis_complete(self, error=None):
+    def on_success(self):
         # Stop and hide progress bar
         self.progress.stop()
         self.progress.pack_forget()
-        
-        if error:
-            self.status_label.config(text=f"Error: {error}")
-        else:
-            self.status_label.config(text="Analysis Complete!")
-            # Close window after 5 seconds
-            self.root.after(5000, self.root.destroy)
+        self.status_label.config(text="Analysis Complete!")
+        # Close window after 5 seconds
+        self.root.after(5000, self.root.destroy)
+
+    def on_error(self, error_msg):
+        # Stop and hide progress bar
+        self.progress.stop()
+        self.progress.pack_forget()
+        self.status_label.config(text=f"Error: {error_msg}")
+        self.analyze_button.config(state='normal')
 
     def run(self):
         self.root.mainloop()
