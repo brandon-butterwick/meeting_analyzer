@@ -6,6 +6,7 @@ import tkinter as tk
 import threading
 import asyncio
 import os
+import sys
 from run import analyze_meeting
 
 class AnalyzerGUI:
@@ -54,7 +55,8 @@ class AnalyzerGUI:
                 self.label.config(text="Done!")
                 # Open the analysis file
                 os.startfile('meeting_brain/outputs/summaries/analysis.txt')
-                self.root.after(5000, self.root.destroy)
+                # Exit the program after 5 seconds
+                self.root.after(5000, lambda: sys.exit(0))
             except:
                 self.label.config(text="Error occurred")
                 self.button.config(state='normal')
