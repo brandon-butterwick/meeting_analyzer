@@ -34,3 +34,6 @@ ENV/
 # Project specific
 meeting_brain/outputs/summaries/*.txt
 !meeting_brain/outputs/summaries/.gitkeep
+
+# Aider
+.aider*
