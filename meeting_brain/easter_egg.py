@@ -5,6 +5,7 @@ Simple GUI for Meeting Analyzer
 import tkinter as tk
 import threading
 import asyncio
+import os
 from run import analyze_meeting
 
 class AnalyzerGUI:
@@ -51,6 +52,8 @@ class AnalyzerGUI:
             try:
                 asyncio.run(analyze_meeting())
                 self.label.config(text="Done!")
+                # Open the analysis file
+                os.startfile('meeting_brain/outputs/summaries/analysis.txt')
                 self.root.after(5000, self.root.destroy)
             except:
                 self.label.config(text="Error occurred")
