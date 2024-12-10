@@ -4,7 +4,7 @@ Meeting Analyzer Agent - Processes meeting transcripts and produces structured s
 
 from pathlib import Path
 from phi.agent import Agent
-from phi.llm.ollama import Ollama
+from phi.model.ollama import Ollama
 from meeting_brain.utils.document_processor import read_pdf, read_pdfs
 
 class MeetingAnalyzer(Agent):
