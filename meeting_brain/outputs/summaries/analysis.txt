@@ -1,0 +1,30 @@
+# Analysis of the Nick & Brandon Meeting
+
+### 1. Notes
+
+- Brandon highlighted ongoing issues with the onboarding process, emphasizing the need for clarity on IT's responsibilities.
+- Nick clarified that 90% of new hires are assumed to onboard remotely unless specified otherwise.
+- Current communication about new hires and their preferences (remote or in-person, Mac or PC) is facilitated by a questionnaire historically managed by Olivia.
+- Computer allocation is largely determined by role or department, rather than specific job titles, with a predefined list for hardware specifications.
+- Peripheral requests are typically made post-onboarding but can be anticipated by team leads if known in advance.
+- IT aims to deliver computers one or two days before the start date, with shipments usually made on Tuesdays.
+- Remote users have an option for IT assistance upon receipt of their equipment, but it is primarily self-service.
+
+### 2. Decisions Made
+
+- **Peripheral Requests:** They remain optional post-onboarding but can be facilitated by lead initiative.
+- **Onsite Computer Provisioning:** Computers can be ready at the office if pre-requested, allowing for self-setup with IT support as needed.
+  
+### 3. Outstanding Questions
+
+- Why aren't peripheral requests included in the initial onboarding questionnaire?
+- How can IT improve timeliness of shipments to ensure arrival before the start date for all hires, especially those overseas?
+
+### 4. Action Items
+
+- **Evaluate Questionnaire:** Review why peripherals are not part of the initial questionnaire and if they should be added.
+- **Coordination with Opal:** Brandon to work with Opal on streamlining the first-day experience.
+
+### 5. Meeting Summary
+
+The meeting focused on clarifying the Internal IT department's role in the onboarding process to address ongoing procedural issues and enhance new hire experiences. Nick provided insights into current processes, including the assumption that most hires are remote, computer allocation based on role spectrum, and peripheral requests post-arrival. Decisions were made to possibly integrate peripheral requests into the onboarding questionnaire and allow for onsite computer setups when requested for in-person onboarding. Outstanding questions about peripheral request inclusion and shipment timelines remain. Actionable steps include reviewing the onboarding questionnaire’s comprehensiveness and coordinating with Opal to improve first-day experiences for new hires.

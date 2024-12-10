@@ -1,0 +1,3 @@
+"""
+Meeting Brain agents module
+"""

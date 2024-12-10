@@ -1,0 +1,3 @@
+"""
+Meeting Brain test suite
+"""
