@@ -2,9 +2,9 @@
 
 ## Quick Start
 
-1. Pull Llama2 model:
+1. Pull Llama3.2 model:
 ```bash
-ollama pull llama2
+ollama pull llama3.2
 ```
 
 2. Install dependencies:
