@@ -2,14 +2,19 @@
 
 ## Quick Start
 
-1. Install dependencies:
+1. Pull Llama2 model:
+```bash
+ollama pull llama2
+```
+
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Set OpenAI API key in `PSYCH`
+3. Set OpenAI API key in `PSYCH`
 
 
-3. Run:
+4. Run:
 ```bash
 python meeting_brain/run.py
