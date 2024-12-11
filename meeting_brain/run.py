@@ -20,7 +20,7 @@ def analyze_meeting():
         team_roles_path='meeting_agent/teams_at_relex.pdf',
         project_timeline_path='meeting_agent/project_timeline.pdf',
         meeting_prep_path='meeting_agent/meeting_prep_with_agenda.pdf',
-        output_path='meeting_brain/outputs/summaries/analysis.txt'
+        output_path='meeting_brain/outputs/summaries/analysis_results.txt'
     )
     print(analysis)
 
