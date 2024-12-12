@@ -3,16 +3,22 @@ Meeting Analyzer Agent - Processes meeting transcripts and produces structured s
 """
 
 from pathlib import Path
+from phi.agent import Agent
+from phi.model.ollama import Ollama
 from meeting_brain.utils.document_processor import read_pdf, read_pdfs
 
-class MeetingAnalyzer:
-    def __init__(self, agent):
+class MeetingAnalyzer(Agent):
+    def __init__(self):
         # Load the agent prompt
         prompt_path = Path(__file__).parent.parent.parent / 'meeting_agent/meeting_analyzer_prompt.pdf'
-        self.system_prompt = read_pdf(str(prompt_path))
+        system_prompt = read_pdf(str(prompt_path))
         
-        self.agent = agent
-        self.agent.system_prompt = self.system_prompt
+        super().__init__(
+            name="Meeting Analyzer",
+            description="A specialized tool designed to process meeting transcripts and produce actionable outputs",
+            model=Ollama(model="llama3.2"),  # Using llama3.2 model from ollama
+            system_prompt=system_prompt
+        )
 
     def analyze_meeting(self, 
                      transcript_path: str,
@@ -62,7 +68,7 @@ Please analyze this meeting following the format specified in the system prompt.
 """
         
         # Get the analysis
-        response = self.agent.run(prompt)
+        response = self.run(prompt)
         analysis = response.content
         
         # Save the analysis
