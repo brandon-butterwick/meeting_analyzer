@@ -11,9 +11,20 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
 
 from meeting_brain.agents.meeting_analyzer import MeetingAnalyzer
+from meeting_brain.utils.agent_utils import phidata_agent
+from meeting_brain.utils.document_processor import read_pdf
 
 def analyze_meeting():
-    analyzer = MeetingAnalyzer()
+    # Get the system prompt
+    prompt_path = Path(project_root) / 'meeting_agent/meeting_analyzer_prompt.pdf'
+    system_prompt = read_pdf(str(prompt_path))
+    
+    # Create the agent first
+    agent = phidata_agent()
+    
+    # Initialize analyzer with the agent
+    analyzer = MeetingAnalyzer(agent)
+    
     analysis = analyzer.analyze_meeting(
         transcript_path='meeting_agent/meeting_transcript.pdf',
         project_background_path='meeting_agent/project_background.pdf',
