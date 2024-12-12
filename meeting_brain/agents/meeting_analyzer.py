@@ -4,8 +4,26 @@ Meeting Analyzer Agent - Processes meeting transcripts and produces structured s
 
 from pathlib import Path
 from phi.agent import Agent
+from phi.model.anthropic import Claude
 from phi.model.ollama import Ollama
 from meeting_brain.utils.document_processor import read_pdf, read_pdfs
+from dotenv import load_dotenv
+
+import os
+load_dotenv()
+os.environ["ANTHROPIC_API_KEY"] = os.getenv("ANTHROPIC_API_KEY")
+
+
+
+from phi.agent import Agent, RunResponse
+from phi.model.anthropic import Claude
+
+agent = Agent(
+    model=Claude(id="claude-3-5-sonnet-20240620"),
+    markdown=True
+)
+
+
 
 class MeetingAnalyzer(Agent):
     def __init__(self):
@@ -16,7 +34,8 @@ class MeetingAnalyzer(Agent):
         super().__init__(
             name="Meeting Analyzer",
             description="A specialized tool designed to process meeting transcripts and produce actionable outputs",
-            model=Ollama(model="llama3.2"),  # Using llama3.2 model from ollama
+            model=Claude(id="claude-3-5-sonnet-20240620"),
+            # model=Ollama(model="llama3.2"),  # Using llama3.2 model from ollama
             system_prompt=system_prompt
         )
 
